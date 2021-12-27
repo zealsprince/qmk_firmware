@@ -3,7 +3,7 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /*
    * ,-----------------------,
-   * |  7  | HOME| END | NUM |
+   * | LED | HOME| END | NUM |
    * |-----+-----+-----+-----|
    * |  7  |  8  |  9  |  0  |
    * |-----+-----+-----+-----|
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void keyboard_post_init_user(void) {
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL);
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
